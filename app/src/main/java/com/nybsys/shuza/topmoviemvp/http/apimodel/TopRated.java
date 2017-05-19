@@ -1,4 +1,4 @@
-package com.nybsys.shuza.topmoviemvp.http.apiodel;
+package com.nybsys.shuza.topmoviemvp.http.apimodel;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

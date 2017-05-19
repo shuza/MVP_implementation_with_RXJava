@@ -1,6 +1,6 @@
 package com.nybsys.shuza.topmoviemvp.http;
 
-import com.nybsys.shuza.topmoviemvp.http.apiodel.OmdbApi;
+import com.nybsys.shuza.topmoviemvp.http.apimodel.OmdbApi;
 
 import retrofit2.http.GET;
 import retrofit2.http.Query;

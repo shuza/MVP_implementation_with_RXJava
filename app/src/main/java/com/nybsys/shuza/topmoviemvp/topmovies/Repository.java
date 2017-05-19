@@ -1,6 +1,6 @@
 package com.nybsys.shuza.topmoviemvp.topmovies;
 
-import javax.xml.transform.Result;
+import com.nybsys.shuza.topmoviemvp.http.apimodel.Result;
 
 import rx.Observable;
 

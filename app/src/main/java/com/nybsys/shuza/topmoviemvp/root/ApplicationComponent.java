@@ -1,5 +1,8 @@
 package com.nybsys.shuza.topmoviemvp.root;
 
+import com.nybsys.shuza.topmoviemvp.http.ApiModuleForInfo;
+import com.nybsys.shuza.topmoviemvp.http.ApiModuleForName;
+import com.nybsys.shuza.topmoviemvp.topmovies.TopMoviesModule;
 import com.nybsys.shuza.topmoviemvp.topmovies.TopMoviesActivity;
 
 import javax.inject.Singleton;
@@ -11,7 +14,7 @@ import dagger.Component;
  */
 
 @Singleton
-@Component(modules = {ApplicationModule.class})
+@Component(modules = {ApplicationModule.class, ApiModuleForInfo.class, ApiModuleForName.class, TopMoviesModule.class})
 public interface ApplicationComponent {
 
     void inject(TopMoviesActivity target);

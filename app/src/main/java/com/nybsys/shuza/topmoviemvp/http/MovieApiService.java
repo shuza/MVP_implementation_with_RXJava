@@ -1,6 +1,6 @@
 package com.nybsys.shuza.topmoviemvp.http;
 
-import com.nybsys.shuza.topmoviemvp.http.apiodel.TopRated;
+import com.nybsys.shuza.topmoviemvp.http.apimodel.TopRated;
 
 import retrofit2.http.GET;
 import retrofit2.http.Query;
