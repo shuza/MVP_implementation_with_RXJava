@@ -21,7 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 @Module
 public class ApiModuleForName {
     public final String BASE_URL = "http://api.themoviedb.org/3/movie/";
-    public final String API_KEY = "8551c026bbf22a4a386ebb5b87a5296b";
+    public final String API_KEY = "quuw50cpv1alu8nc04p54bs7u20c6g";
 
     @Provides
     public OkHttpClient provideClient() {
@@ -33,7 +33,7 @@ public class ApiModuleForName {
             public Response intercept(Chain chain) throws IOException {
                 Request request = chain.request();
                 HttpUrl url = request.url().newBuilder().addQueryParameter(
-                        "api_key", API_KEY
+                        "Client-ID", API_KEY
                 ).build();
                 request = request.newBuilder().url(url).build();
                 return chain.proceed(request);
